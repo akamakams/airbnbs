@@ -1,0 +1,550 @@
+:root {
+    --bgColor: white;
+    --Color: rgb(255, 47, 151);
+    --SecColor: grey;
+    --cicle: 50%;
+    --pill: 999px;
+    --shadeLg: 0 3px 5px 0 grey;
+    --shadeXl: 0 3px 30px 0 grey;
+    --hdn: hidden
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--Color);
+    border-radius: 999px;
+}
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    width: 90vw;
+    height: 70px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+nav .logo {
+    color: var(--Color);
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav .med {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--SecColor);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav .med span:hover {
+    color: black;
+}
+
+nav .last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+nav .last span:nth-child(1) {
+    color: grey;
+    font-weight: 500;
+}
+
+nav .last button {
+    cursor: pointer;
+    background: white;
+    padding: 6px 15px;
+    color: var(--Color);
+    border: 1px solid var(--Color);
+    border-radius: 26px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+nav .last button:hover {
+    background: var(--Color);
+    color: var(--bgColor);
+}
+
+#search {
+    box-sizing: border-box;
+    width: 70vw;
+    height: 70px;
+    margin: 20px auto;
+    padding: 0 10px;
+    box-shadow: 0 0 3px 0 grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.where,
+.checkin,
+.checkout,
+.addGuests {
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    font-size: 12px;
+    color: var(--SecColor);
+}
+
+.addGuests {
+    padding: 0 30px;
+    border-left: 2px solid var(--SecColor);
+}
+
+.searchBtn {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--bgColor);
+    color: var(--Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    border: 1px solid var(--Color);
+    cursor: pointer;
+}
+
+.searchBtn:hover {
+    background: var(--Color);
+    color: var(--bgColor);
+}
+
+.where>span:nth-child(1),
+.checkin>span:nth-child(1),
+.checkout>span:nth-child(1),
+.addGuests>span:nth-child(1) {
+    color: var(--Color);
+    font-weight: 600;
+}
+
+.sec {
+    /* padding: 0 10px; */
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    border-bottom: 2px solid var(--Color);
+}
+
+.lineOfIcons {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: var(--Color);
+    border-bottom: 2px solid var(--bgColor);
+    cursor: pointer;
+}
+
+.icon:hover {
+    border-bottom: 2px solid var(--Color);
+}
+
+.sec .last button {
+    border: 1px solid gainsboro;
+    background: white;
+    padding: 5px 27px;
+    border-radius: 6px;
+}
+
+.secGrid {
+    width: 90vw;
+    min-height: 300px;
+    max-height: 900px;
+    box-sizing:border-box;
+    padding: 0 10px;
+    overflow: auto;
+    /* border: 2px solid black; */
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7,300px);
+}
+
+.col {
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    position:relative;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(240, 238, 238);
+}
+
+.secGrid .img {
+    position: relative;
+    border-radius: 10px;
+    max-height: 50%;
+    overflow: hidden;
+    max-width: 100%;
+    box-shadow: 0 0 3px 0 black;
+    /* border: 2px solid black; */
+}
+
+.guestFvr {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border: 2px solid var(--bgColor);
+    background: var(--Color);
+    color: var(--bgColor);
+    border-radius: 99px;
+    padding: 5px 10px;
+}
+.heart{
+    position:absolute;
+    font-size: 20px;
+    right: 2px;
+    top: 2px;
+    color: white;
+    cursor: pointer;
+}
+.secGrid .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.col .titleOfHouse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.col .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+/* Footer */
+footer {
+    margin-top: 50px;
+    width: 100vw;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Color);
+    color: white;
+}
+
+footer h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+footer h1 span:nth-child(2) {
+    color: white;
+    /* color: rgb(5, 5, 36); */
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+footer div a {
+    color: white;
+    text-decoration: none;
+}
+/* Media Of Phone */
+
+@media only screen and (max-width:425px) {
+    nav {
+        padding: 0 10px;
+        width: 100vw;
+    }
+
+    nav .logo {
+        font-size: 20px;
+    }
+
+    nav .med {
+        display: none;
+    }
+
+    nav .last {
+        font-size: 10px;
+        gap: 5px;
+    }
+
+    nav .last button {
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+
+    #search {
+        width: 90vw;
+        height: 40px;
+        border: 999px;
+        ;
+    }
+
+    .where>span:nth-child(1),
+    .checkin>span:nth-child(1),
+    .checkout>span:nth-child(1),
+    .addGuests>span:nth-child(1) {
+        color: var(--Color);
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+    .where,
+    .checkin,
+    .checkout,
+    .addGuests {
+        font-size: 5px;
+        padding: 0 2px;
+    }
+
+    .searchBtn {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .sec .lineOfIcons {
+
+        padding: 0;
+        font-size: 7px;
+        width: 85%;
+        gap: 5px;
+    }
+
+    .sec .last button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .sec .last button:nth-child(2) {
+        display: none;
+    }
+    .secGrid{
+        grid-template-columns: 1fr;
+    }
+    .secGrid .img{
+        font-size: 5px;
+    }
+    .secGrid .img .guestFvr{
+        border: 0;
+        padding: 2px 4px;
+        top: 5px;
+        left: 5px;
+    }
+    .secGrid .img .heart{
+        font-size: 10px;
+    }
+    .col .titleOfHouse{
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 10px;
+        gap: 10px;
+    }
+    .col .matter, .col .price{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    footer {
+        margin-top: 300px;
+        font-size: 10px;
+    }
+
+    footer h1 {
+        gap: 2px;
+    }
+}
+
+/* Media of tablet */
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    nav {
+        padding: 0 10px;
+        width: 100vw;
+    }
+
+    nav .logo {
+        font-size: 30px;
+    }
+
+    nav .med {
+        display: none;
+    }
+
+    nav .last {
+        font-size: 10px;
+        gap: 5px;
+    }
+
+    nav .last button {
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+
+    #search {
+        width: 90vw;
+        height: 40px;
+        border: 999px;
+        ;
+    }
+
+    .where>span:nth-child(1),
+    .checkin>span:nth-child(1),
+    .checkout>span:nth-child(1),
+    .addGuests>span:nth-child(1) {
+        color: var(--Color);
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+    .where,
+    .checkin,
+    .checkout,
+    .addGuests {
+        font-size: 5px;
+        padding: 0 2px;
+    }
+
+    .searchBtn {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .sec .lineOfIcons {
+        padding: 0;
+        font-size: 10px;
+        width: 85%;
+        gap: 5px;
+    }
+
+    .sec .last button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .sec .last button:nth-child(2) {
+        display: none;
+    }
+    .secGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .secGrid .img{
+        font-size: 10px;
+    }
+    .secGrid .img .guestFvr{
+        border: 0;
+        padding: 5px 10px;
+        top: 5px;
+        left: 5px;
+    }
+    .secGrid .img .heart{
+        font-size: 20px;
+    }
+    .col .titleOfHouse{
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 10px;
+        gap: 10px;
+    }
+    .col .matter, .col .price{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    footer {
+        margin-top: 200px;
+    }
+}
+
+/* medlap */
+@media only screen and (min-width:769px) and (max-width:1200px) {
+    .sec .lineOfIcons {
+        width: 65%;
+    }
+
+    .sec .last button {
+        padding: 4px 5px;
+    }
+    .secGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .secGrid .img{
+        font-size: 10px;
+    }
+    .secGrid .img .guestFvr{
+        border: 0;
+        padding: 5px 10px;
+        top: 5px;
+        left: 5px;
+    }
+    .secGrid .img .heart{
+        font-size: 20px;
+    }
+    .col .titleOfHouse{
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 10px;
+        gap: 10px;
+    }
+    .col .matter, .col .price{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}

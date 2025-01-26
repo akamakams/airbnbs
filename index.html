@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AirBnb</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="logo/all.js"></script>
+        <link rel="shortcut icon" href="imgs/lg.jpeg" type="image/x-icon">
+    </head>
+
+    <body>
+        <!-- Nav with searchBar -->
+        <nav>
+            <div class="logo">AirBnB <i class="fab fa-airbnb"></i></div>
+            <!-- Portion of medium of navbar -->
+            <div class="med">
+                <span>Stay</span>
+                <span>Experiences</span>
+            </div>
+            <!-- Portion of last -->
+            <div class="last">
+                <span>Airbnb your home</span>
+                <span><i class="fa fa-earth"></i></span>
+                <button> ≡ <i class="fa fa-circle-user"></i></button>
+            </div>
+        </nav>
+        <!-- Search bar below nav -->
+        <div id="search">
+            <div class="where">
+                <span>Where</span>
+                <span>Search destinations</span>
+            </div>
+            <div class="checkin">
+                <span>Check in</span>
+                <span>Add times</span>
+            </div>
+            <div class="checkout">
+                <span>Check out</span>
+                <span>Add dates</span>
+            </div>
+            <div class="addGuests">
+                <span>Who</span>
+                <span>Add guests</span>
+            </div>
+            <div class="searchBtn">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <main>
+            <!-- Section of filter -->
+            <section class="sec">
+                <div class="lineOfIcons">
+                    <div class="icon">
+                        <span><i class="fa fa-home"></i></span>
+                        <span>Cabins</span>
+                    </div>
+                    <div class="icon">
+                        <span><i class="fa fa-ticket"></i></span>
+                        <span>Icons</span>
+                    </div>
+                    <div class="icon">
+                        <span><i class="fab fa-reddit-alien"></i></span>
+                        <span>Icons</span>
+                    </div>
+                    <div class="icon">
+                        <span><i class="fa fa-home"></i></span>
+                        <span>Cabins</span>
+                    </div>
+                    <div class="icon">
+                        <span><i class="fa fa-ticket"></i></span>
+                        <span>Icons</span>
+                    </div>
+                    <div class="icon">
+                        <span><i class="fab fa-reddit-alien"></i></span>
+                        <span>Icons</span>
+                    </div>
+                    <div class="icon">
+                        <span><i class="fa fa-home"></i></span>
+                        <span>Cabins</span>
+                    </div>
+                    <div class="icon">
+                        <span><i class="fa fa-ticket"></i></span>
+                        <span>Icons</span>
+                    </div>
+                    <div class="icon">
+                        <span><i class="fab fa-reddit-alien"></i></span>
+                        <span>Icons</span>
+                    </div>
+                </div>
+                <div class="med">
+                </div>
+                <div class="last">
+                    <button>Filters</button>
+                    <button>Display total before taxes</button>
+                </div>
+            </section>
+            <!-- House card -->
+            <section class="secGrid">
+                <!-- col1 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i1.jpg  " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col2 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i2.jpeg   " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col3 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i3.jpg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col4 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i4.jpeg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i1.jpg  " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col2 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i2.jpeg   " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col3 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i3.jpg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col4 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i4.jpeg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i1.jpg  " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col2 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i2.jpeg   " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col3 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i3.jpg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col4 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i4.jpeg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i1.jpg  " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col2 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i2.jpeg   " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col3 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i3.jpg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col4 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i4.jpeg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i1.jpg  " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col2 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i2.jpeg   " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col3 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i3.jpg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col4 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i4.jpeg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i1.jpg  " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col2 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i2.jpeg   " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col3 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i3.jpg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col4 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i4.jpeg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i1.jpg  " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col2 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i2.jpeg   " alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col3 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i3.jpg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+                <!-- col4 -->
+                <div class="col">
+
+                    <div class="img">
+                        <div class="guestFvr">
+                            Guest Favorite
+                        </div>
+                        <div class="heart" onclick="heart(this)">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img src="imgs/i4.jpeg" alt="">
+                    </div>
+                    <!-- title of house -->
+                    <div class="titleOfHouse">
+                        <h1>Llangollen, UK</h1>
+                        <span>&starf; 4.96</span>
+                    </div>
+                    <!-- matter -->
+                    <div class="matter">
+                        <div class="distance">207 kilometer away</div>
+                        <div class="date">9-17 feb</div>
+                    </div>
+                    <!-- Price of house -->
+                    <div class="price">
+                        <h2>&euro;1200</h2>
+                        <span>Night</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <h1> <i class="fab fa-airbnb"></i> <span> AirBnB</span></h1>
+            <div>
+                <a href="#">Terms and Privacy notes</a>
+                <a href="#">Send us feedback</a>
+                <a href="#">Help</a>
+            </div>
+            <div>
+                &copy; 1996-2025, AirBnB, Inc or it's affiliates.  --Anas
+            </div>
+        </footer>
+    </body>
+    <script>
+        // let heart = document.getElementsByClassName("heart");
+        function heart(hrt) {
+            if(hrt.style.color = "white"){
+                hrt.style.color = "red";
+            }
+            else{
+                hrt.style.color = "white";
+            }
+        }
+    </script>
+
+</html> 
